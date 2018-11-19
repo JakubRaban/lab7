@@ -82,8 +82,11 @@ public class Car {
             y = -y;
         }
         newPosition = newPosition.add(new Position(x, y));
-        if(this.map.canMoveTo(newPosition))
+        if(this.map.canMoveTo(newPosition)) {
+            positionChanged(this.position, newPosition);
             this.position = newPosition;
+        }
+
     }
 
     public boolean isOutOfBounds(Position p) {

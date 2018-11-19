@@ -41,7 +41,6 @@ public abstract class AbstractWorldMap implements IWorldMap, IPositionChangeObse
 
     @Override
     public void positionChange(Position oldPosition, Position newPosition) {
-        Car moved = cars.remove(oldPosition);
-        cars.put(newPosition, moved);
+        cars.put(newPosition, cars.remove(oldPosition));
     }
 }

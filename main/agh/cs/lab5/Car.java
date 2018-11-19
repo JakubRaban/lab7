@@ -1,5 +1,6 @@
 package agh.cs.lab5;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import static agh.cs.lab5.MapDirection.*;
@@ -12,6 +13,7 @@ public class Car {
     private MapDirection dir;
     private Position position;
     private IWorldMap map;
+    private List<IPositionChangeObserver> observers = new LinkedList<>();
 
     public Car() {
         this.dir = NORTH;
@@ -26,6 +28,20 @@ public class Car {
     public Car(IWorldMap map, Position initialPosition) {
         this(map);
         this.position = initialPosition;
+    }
+
+    public void addObserver(IPositionChangeObserver observer) {
+        observers.add(observer);
+    }
+
+    public void removeObserver(IPositionChangeObserver observer) {
+        observers.remove(observer);
+    }
+
+    public void positionChanged(Position oldPosition, Position newPosition) {
+        for(IPositionChangeObserver observer : observers) {
+            observer.positionChange(oldPosition, newPosition);
+        }
     }
 
     public Position getPosition() {

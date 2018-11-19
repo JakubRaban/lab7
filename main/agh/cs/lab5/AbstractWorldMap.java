@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by student25 on 2018-10-29.
  */
-public abstract class AbstractWorldMap implements IWorldMap {
+public abstract class AbstractWorldMap implements IWorldMap, IPositionChangeObserver {
 
     protected Map<Position, Car> cars = new LinkedHashMap<>();
     protected MapVisualizer visualizer = new MapVisualizer(this);
@@ -39,4 +39,9 @@ public abstract class AbstractWorldMap implements IWorldMap {
         }
     }
 
+    @Override
+    public void positionChange(Position oldPosition, Position newPosition) {
+        Car moved = cars.remove(oldPosition);
+        cars.put(newPosition, moved);
+    }
 }

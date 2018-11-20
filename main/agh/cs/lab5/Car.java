@@ -20,12 +20,13 @@ public class Car {
         this.position = new Position(2,2);
     }
 
-    public Car(IWorldMap map) {
+    public Car(AbstractWorldMap map) {
         this();
         this.map = map;
+        addObserver(map);
     }
 
-    public Car(IWorldMap map, Position initialPosition) {
+    public Car(AbstractWorldMap map, Position initialPosition) {
         this(map);
         this.position = initialPosition;
     }
@@ -86,7 +87,6 @@ public class Car {
             positionChanged(this.position, newPosition);
             this.position = newPosition;
         }
-
     }
 
     public boolean isOutOfBounds(Position p) {
@@ -98,11 +98,12 @@ public class Car {
             MoveDirection[] directions = OptionsParser.parse(args);
             List<Haystack> haystacks = new ArrayList<>();
             haystacks.add(new Haystack(new Position(4,4)));
-            IWorldMap map = new UnboundedMap(haystacks);
+            AbstractWorldMap map = new UnboundedMap(haystacks);
             map.place(new Car(map));
             map.place(new Car(map, new Position(7, 7)));
+            System.out.println(map);
             map.run(directions);
-            System.out.println(map.objectAt(new Position(4,4)));
+            System.out.println(map);
         } catch (IllegalArgumentException e) {
             System.out.println("haha BUONT xDDD");
         }

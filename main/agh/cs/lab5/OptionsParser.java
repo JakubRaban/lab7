@@ -14,7 +14,7 @@ public class OptionsParser {
             else if(arg.equals("f") || arg.equals("forward")) tab[index] = FORWARD;
             else if(arg.equals("l") || arg.equals("left")) tab[index] = LEFT;
             else if(arg.equals("r") || arg.equals("right")) tab[index] = RIGHT;
-            else throw new IllegalArgumentException(arg + " is not legal move direction");
+            else throw new IllegalArgumentException(arg + " is not a legal move direction");
             index++;
         }
         return tab;

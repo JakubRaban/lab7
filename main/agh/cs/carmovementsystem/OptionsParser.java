@@ -1,5 +1,5 @@
-package agh.cs.lab5;
-import static agh.cs.lab5.MoveDirection.*;
+package agh.cs.carmovementsystem;
+import static agh.cs.carmovementsystem.MoveDirection.*;
 /**
  * Created by student25 on 2018-10-15.
  */

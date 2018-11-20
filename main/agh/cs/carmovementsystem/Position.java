@@ -1,4 +1,4 @@
-package agh.cs.lab5;
+package agh.cs.carmovementsystem;
 
 import java.lang.Math;
 
@@ -18,23 +18,23 @@ public class Position {
         return "(" + this.x + "," + this.y + ")";
     }
 
-    boolean smaller(Position p) {
+    public boolean smaller(Position p) {
         return this.x <= p.x && this.y <= p.y;
     }
 
-    boolean larger(Position p) {
+    public boolean larger(Position p) {
         return this.x >= p.x && this.y >= p.y;
     }
 
-    Position upperRight(Position p) {
+    public Position upperRight(Position p) {
         return new Position(Math.max(this.x, p.x), Math.max(this.y, p.y));
     }
 
-    Position lowerLeft(Position p) {
+    public Position lowerLeft(Position p) {
         return new Position(Math.min(this.x, p.x), Math.min(this.y, p.y));
     }
 
-    Position add(Position p) {
+    public Position add(Position p) {
         return new Position(this.x + p.x, this.y + p.y);
     }
 

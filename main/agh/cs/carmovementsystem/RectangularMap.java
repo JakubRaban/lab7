@@ -1,4 +1,4 @@
-package agh.cs.lab5;
+package agh.cs.carmovementsystem;
 
 /**
  * Created by student26 on 2018-10-22.

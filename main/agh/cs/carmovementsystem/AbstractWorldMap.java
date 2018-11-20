@@ -1,4 +1,4 @@
-package agh.cs.lab5;
+package agh.cs.carmovementsystem;
 
 import java.util.*;
 

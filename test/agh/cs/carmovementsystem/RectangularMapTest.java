@@ -1,4 +1,4 @@
-package agh.cs.lab5;
+package agh.cs.carmovementsystem;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

@@ -1,4 +1,4 @@
-package agh.cs.lab5;
+package agh.cs.carmovementsystem;
 
 public class MapVisualizer {
     private static final String EMPTY_CELL = " ";

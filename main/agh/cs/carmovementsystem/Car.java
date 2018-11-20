@@ -1,10 +1,10 @@
-package agh.cs.lab5;
+package agh.cs.carmovementsystem;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import static agh.cs.lab5.MapDirection.*;
-import static agh.cs.lab5.MoveDirection.*;
+import static agh.cs.carmovementsystem.MapDirection.*;
+import static agh.cs.carmovementsystem.MoveDirection.*;
 /**
  * Created by student25 on 2018-10-15.
  */

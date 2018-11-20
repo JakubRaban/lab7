@@ -1,5 +1,8 @@
 package agh.cs.carmovementsystem;
 
+import agh.cs.carmovementsystem.maps.AbstractWorldMap;
+import agh.cs.carmovementsystem.maps.RectangularMap;
+import agh.cs.carmovementsystem.objects.Car;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

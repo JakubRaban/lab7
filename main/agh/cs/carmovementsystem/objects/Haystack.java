@@ -1,4 +1,6 @@
-package agh.cs.carmovementsystem;
+package agh.cs.carmovementsystem.objects;
+
+import agh.cs.carmovementsystem.Position;
 
 /**
  * Created by student25 on 2018-10-29.

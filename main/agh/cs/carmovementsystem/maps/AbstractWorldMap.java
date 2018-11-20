@@ -1,4 +1,8 @@
-package agh.cs.carmovementsystem;
+package agh.cs.carmovementsystem.maps;
+
+import agh.cs.carmovementsystem.*;
+import agh.cs.carmovementsystem.objects.Car;
+import agh.cs.carmovementsystem.utilities.MapVisualizer;
 
 import java.util.*;
 

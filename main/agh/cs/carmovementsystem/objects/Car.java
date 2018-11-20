@@ -1,9 +1,18 @@
-package agh.cs.carmovementsystem;
+package agh.cs.carmovementsystem.objects;
+import agh.cs.carmovementsystem.IPositionChangeObserver;
+import agh.cs.carmovementsystem.MoveDirection;
+import agh.cs.carmovementsystem.utilities.OptionsParser;
+import agh.cs.carmovementsystem.Position;
+import agh.cs.carmovementsystem.maps.AbstractWorldMap;
+import agh.cs.carmovementsystem.maps.IWorldMap;
+import agh.cs.carmovementsystem.maps.MapDirection;
+import agh.cs.carmovementsystem.maps.UnboundedMap;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import static agh.cs.carmovementsystem.MapDirection.*;
+import static agh.cs.carmovementsystem.maps.MapDirection.*;
 import static agh.cs.carmovementsystem.MoveDirection.*;
 /**
  * Created by student25 on 2018-10-15.

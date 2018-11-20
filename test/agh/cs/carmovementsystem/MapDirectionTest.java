@@ -1,5 +1,6 @@
 package agh.cs.carmovementsystem;
 
+import agh.cs.carmovementsystem.maps.MapDirection;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

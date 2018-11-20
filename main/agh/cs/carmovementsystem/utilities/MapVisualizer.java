@@ -1,4 +1,7 @@
-package agh.cs.carmovementsystem;
+package agh.cs.carmovementsystem.utilities;
+
+import agh.cs.carmovementsystem.Position;
+import agh.cs.carmovementsystem.maps.IWorldMap;
 
 public class MapVisualizer {
     private static final String EMPTY_CELL = " ";

@@ -1,4 +1,6 @@
-package agh.cs.carmovementsystem;
+package agh.cs.carmovementsystem.utilities;
+import agh.cs.carmovementsystem.MoveDirection;
+
 import static agh.cs.carmovementsystem.MoveDirection.*;
 /**
  * Created by student25 on 2018-10-15.

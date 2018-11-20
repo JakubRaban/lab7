@@ -1,4 +1,4 @@
-package agh.cs.carmovementsystem;
+package agh.cs.carmovementsystem.maps;
 
 /**
  * Created by student25 on 2018-10-08.

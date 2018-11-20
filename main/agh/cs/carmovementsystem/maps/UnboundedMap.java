@@ -1,4 +1,8 @@
-package agh.cs.carmovementsystem;
+package agh.cs.carmovementsystem.maps;
+
+import agh.cs.carmovementsystem.objects.Car;
+import agh.cs.carmovementsystem.objects.Haystack;
+import agh.cs.carmovementsystem.Position;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -36,7 +40,7 @@ public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
     public String toString() {
         Position minPosition = new Position(Integer.MAX_VALUE, Integer.MAX_VALUE);
         Position maxPosition = new Position(Integer.MIN_VALUE, Integer.MIN_VALUE);
-        for (Map.Entry<Position,Car> entry: cars.entrySet()) {
+        for (Map.Entry<Position, Car> entry: cars.entrySet()) {
             minPosition = minPosition.lowerLeft(entry.getKey());
             maxPosition = maxPosition.upperRight(entry.getKey());
         }

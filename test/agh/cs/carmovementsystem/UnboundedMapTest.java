@@ -1,5 +1,8 @@
 package agh.cs.carmovementsystem;
 
+import agh.cs.carmovementsystem.maps.UnboundedMap;
+import agh.cs.carmovementsystem.objects.Car;
+import agh.cs.carmovementsystem.objects.Haystack;
 import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;

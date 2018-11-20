@@ -26,16 +26,11 @@ public abstract class AbstractWorldMap implements IWorldMap, IPositionChangeObse
     }
 
     public void run(MoveDirection[] directions) {
-        Position[] positions = cars.keySet().toArray(new Position[] {});
-        int size = positions.length;
+        int size = cars.keySet().size();
         for(int i = 0; i < directions.length; i++) {
+            Position[] positions = cars.keySet().toArray(new Position[] {});
             Car movingCar = cars.get(positions[i % size]);
-            Position initialPosition = movingCar.getPosition();
             movingCar.move(directions[i]);
-            if(!movingCar.getPosition().equals(initialPosition)) {
-                cars.put(movingCar.getPosition(), cars.remove(initialPosition));
-                positions[i % size] = movingCar.getPosition();
-            }
         }
     }
 

@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
  */
 public class RectangularMapTest {
 
-    IWorldMap map;
+    AbstractWorldMap map;
 
     @Test
     public void testCanMoveTo() {
